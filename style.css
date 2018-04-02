@@ -1,0 +1,12 @@
+.nav{
+	list-style-type: none;
+}
+li{
+	margin: 24px;
+}
+.li1{
+	font-weight: bold;
+}
+.imgheader{
+	width: 7%;
+}
