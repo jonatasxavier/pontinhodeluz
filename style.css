@@ -1,12 +1,40 @@
+@font-face{
+	font-family: "Raleway-Bold";
+	src: url("Fontes/Raleway-Bold.ttf");
+}
+@font-face{
+	font-family: "Raleway-Regular";
+	src: url("Fontes/Raleway-Regular.ttf");
+}
+@font-face{
+	font-size: "Raleway-SemiBold.ttf";
+	src: url("Fontes/Raleway-SemiBold.ttf");
+}
+@font-face{
+	font-size: "Sunday-Regular";
+	src: url("Fontes/Sunday-Regular.otf");
+}
+.imgheader{
+	width: 7%;
+}
 .nav{
 	list-style-type: none;
 }
 li{
 	margin: 24px;
+	font-size: 1em;
+	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.84em;
 }
 .li1{
+	font-family: Releway-Bold, sans-serif;
 	font-weight: bold;
+	text-decoration: none;
 }
-.imgheader{
-	width: 7%;
+.li2{
+	font-family: Releway-Regular, sans-serif;
+	text-decoration: none;
+	
 }
