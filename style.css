@@ -1,21 +1,20 @@
-@font-face{
-	font-family: "Raleway-Bold";
-	src: url("Fontes/Raleway-Bold.ttf");
+body{
+	background: url("PL - Assets/home.png") 800px 123px,
+		 url("PL - Assets/home-bc.png") top right, url("PL - Assets/footer-bc.jpg") center bottom;
+		 background-size: auto, auto, 100%;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    margin: 0;
+    padding-top: 70px;
 }
-@font-face{
-	font-family: "Raleway-Regular";
-	src: url("Fontes/Raleway-Regular.ttf");
-}
-@font-face{
-	font-size: "Raleway-SemiBold.ttf";
-	src: url("Fontes/Raleway-SemiBold.ttf");
-}
-@font-face{
-	font-size: "Sunday-Regular";
-	src: url("Fontes/Sunday-Regular.otf");
+header{
+	position: fixed;
+	top:0;
+	left:0;	
 }
 .imgheader{
-	width: 7%;
+	width: 100px;
+	padding-left: 35%;
 }
 .nav{
 	list-style-type: none;
@@ -29,12 +28,73 @@ li{
 	line-height: 0.84em;
 }
 .li1{
-	font-family: Releway-Bold, sans-serif;
+	font-family: Raleway; 
 	font-weight: bold;
 	text-decoration: none;
 }
 .li2{
-	font-family: Releway-Regular, sans-serif;
+	font-family: Raleway;
+	font-weight: normal;
 	text-decoration: none;
-	
+}
+.titulo{
+    width: 80%;	
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h2{
+	font-family: Sunday;
+	font-weight: normal;
+	font-size: 1.25em;
+	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 2.25em;
+	font-size: 1em;
+	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.86em;
+    font-weight: normal; 
+}
+.titulo1{
+	font-family: Sunday;
+	font-size: 1.25em;
+	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 2.25em;
+	font-weight: normal;
+}
+.text-prg{
+	font-family: Raleway;
+	font-size: 1em;
+	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.86em;
+	font-weight: 600;
+}
+.home{
+	width: 22%;	
+}
+.rede{
+	width: 16%;
+}
+.img-prg1{
+	width: 4%;
+}
+.img-prg2{
+	width: 5%;
+}
+.pac1{
+	width: 10%;
+}
+.pac2{
+	width: 13%;
+}
+.solzinho{
+	width: 8%;
 }
