@@ -1,14 +1,15 @@
 body{
-	background: url("PL - Assets/home.png") 940px 123px,
-		url("PL - Assets/home-bc.png") 790px 0px,
-		url("PL - Assets/footer-bc.jpg") center bottom,
-		 url("PL - Assets/flowers.svg") 20px 760px;
-		 background-size:18%,54%,100%, 60%;
+	background: url("PL - Assets/home.png") 880px 123px,
+				url("PL - Assets/home-bc.png") 720px 0px,
+				url("PL - Assets/footer-bc.jpg") 20% 100%,
+		 		url("PL - Assets/flowers.svg") 20px 760px;
+	background-size:18%,54%,100%, 60%;
     background-repeat:no-repeat, no-repeat, no-repeat, repeat-x;
     padding-left:15%;
-    margin:0;
     padding-top:70px;
+    margin:0;
 }	
+/*HEADER*/
 header{
 	width:12%;
 	height:100vh;
@@ -21,19 +22,20 @@ header{
 	justify-content:flex-start;
 	align-items:flex-start;
 }
-/*HEADER*/
-.imgheader{
+.logo{
 	width:100px;
 	margin-top:50px;
 	align-self:center;
 }
 .nav{
+	padding-top: 28px;
 	padding-left:30px;
 	display:flex;
 	flex-direction:column;
 	align-items:flex-start;
 }
-.li1{
+.a{
+	padding-top: 8px;
 	font-family:Raleway; 
 	font-size:1em;
 	font-weight:normal;
@@ -44,17 +46,21 @@ header{
 	color:#005884;
 	line-height:0.84em;
 }
-.li1:hover{
+.a:hover{
 	font-weight:bold;
 }
 /*MAIN*/
-.titulo{
+main{
+	width: 100%;
+}
+.inicio{
 	margin-top:49px;
     padding-left:6%;
 	display:flex;
     flex-direction:column; 
 }
-.titulo h2{
+.inicio h2{
+	width: 54%;	
 	font-family:Sunday;
 	font-weight:normal;
 	font-size:1.25em;
@@ -63,37 +69,25 @@ header{
 	color:#005884;
 	line-height:2.25em; *ATENÇÃO*
 	line-height:2em;
-    padding-right:50%;
 }
-.h2-programas, .h2-parceiros, .h2-contatos{ /*H2 PROGRAMAS, H2 PARCEIROS*/
-	width:100%;
-	font-family:Sunday;
-	font-size:1.25em;
-	font-style:normal; 
-	text-align:left;
-	font-weight:normal;
-	color:#005884;
-	line-height:2.25em;
-	
-}
-.sobre{ /*Texto sobre o Pontinho de Luz*/
+.sobre{ /*Texto sobre o Pontinho de Luz*/ 
+	padding-top: 42px;
+	padding-right:35%;
     width:65%;	
 	font-family:Raleway;
 	font-size:1em;
 	font-style:normal;
 	text-align:left;
 	color:#005884;
-	padding-top:62px;
-	padding-right:35%;
 	line-height:1.3em;
 }
 .redes{
-	padding-top:280px;
+	padding-top:220px;
 	padding-left:6%;
 	display:flex;
 	flex-wrap:wrap;
 }
-.h2redes{
+.h2-redes{
 	width:100%;
 	font-family:Sunday;
 	font-size:1.25em;
@@ -103,19 +97,22 @@ header{
 	line-height:2.25em;
 	color:#005884;
 }
-
 figure{
 	padding:0;
 	margin:0;
 	display:flex;
-	flex-direction:column;
+	flex-direction:	column;
+}
+.rede{ /* IMAGENS REDE SOLIDARIEDADE*/
+	width:185px;
+	padding-right:10px;
 }
 .figcaption{	
+	padding-top:16px;
 	font-family:Raleway;
 	font-size:1em;
 	font-style:normal;
 	text-align:left;
-	padding-top:16px;
 	color:#005884;
 	line-height:1.3em;
 }
@@ -126,19 +123,39 @@ figure{
 	flex-direction:row;
 	flex-wrap:wrap;
 }
-.text-prg{ /*H3 DE PROGRAMAS*/
+.h2-programas, .h2-parceiros{ /*H2 PROGRAMAS, H2 PARCEIROS*/
+	width:100%;
+	font-family:Sunday;
+	font-size:1.25em;
+	font-style:normal; 
+	text-align:left;
+	font-weight:normal;
+	color:#005884;
+	line-height:2.25em;	
+}
+.div-programas{ /*DIV PROGRAMAS*/
+	width:5%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.imagem-programas{
+	height:70px;
+	padding-top:56px;
+}
+.text-programas{ /*H3 DE PROGRAMAS*/
 	width:10%;
+	margin-top:80px;
+	margin-left:1%;
+	padding-left:1%;
 	font-family:Raleway;
 	font-size:1em;
 	font-style:normal;
 	text-align:left;
 	color:#005884;
 	line-height:0.86em;
-	padding-left:1%;
-	margin-top:80px;
-	margin-left:1%;
 }
-.pprg{ /*P DE PROGRAMAS*/
+.p-programas{ /*P DE PROGRAMAS*/
 	width:80%;	
 	padding-top:62px;
 	font-family:Raleway;
@@ -148,51 +165,78 @@ figure{
 	color:#005884;
 	line-height:1.3em;	
 }
-.prg1{ /*DIV PROGRAMAS*/
-	width:5%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.prg2{
-	display:flex;
-	justify-content:row;
-}
-.prg3{
-	display:flex;
-	justify-content:row;
-}
-.prg4{
-	display:flex;
-	justify-content:row;
-}
-.home{
-	width:22%;	
-}
-.rede{ /* IMAGENS REDE SOLIDARIEDADE*/
-	width:185px;
-	padding-right:10px;
-}
-.img-prg1{
-	height:70px;
-	padding-top:56px;
-}
-/* PARCEIROS*/
 .parceiros{
-	padding-top:70px;
+	margin-bottom: 12%;
+	padding-top: 50px;
+	padding-left: 6%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 }
-.pac1{
-	width:10%;/*IMAGEM- PARCEIROS*/
+.parceiros img{
+	padding-top: 20px; 
 }
-.pac2{
-	width:13%; /*IMAGEM-PARCEIROS*/
+.parceiro1{
+	width: 120px;
+}
+.parceiro2{
+	width:	150px; /*IMAGEM-PARCEIROS*/
+	margin-left: 6%;
+}
+footer{
+	width:100%;
+	/*display: flex;
+	flex-direction: row;*/	
+}
+/*.contato2{
+}*/
+.h2-contatos{
+	padding-top:40px;	
+	width:100%;
+	font-family:Sunday;
+	font-size:1.4em;
+	font-style:normal; 
+	text-align:left;
+	font-weight:normal;
+	color:#fff;
+	line-height:3em;		
 }
 .solzinho{
 	width:8%;
 }
-.contatos{
-	padding-top:40px;	
+.contato2{
+	width: 28.3%;	
+	display: flex;
+	flex-direction:column;
+	background: red;
+}
+.icons-contato{
+    display: flex;	
+	flex-wrap:wrap;
+	align-items: center;
 }
 .icons{
-	width:20px; /*IMAGEM CONTATOS*/
+	width:20px; 
+}
+.p-contatos{	
+	font-family:Raleway;
+	font-size: 1em;
+    font-weight: bold;
+	font-style:normal;
+	color: #fff;
+	text-align:left;
+	line-height:0.86em;	
+}
+.p-contatos2{
+	font-family:Raleway;
+	font-size: 1em;
+    font-weight:normal;
+	font-style:	normal;
+	color: #fff;
+	text-align:left;
+	line-height: 1.2em;	
+}
+.iframe{
+	/*padding-left: 10%;*/
+	/*padding-top: 20%;*/
 }
