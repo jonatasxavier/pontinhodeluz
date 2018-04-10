@@ -1,111 +1,198 @@
 body{
-	background: url("PL - Assets/home.png") 850px 123px,
-		url("PL - Assets/home-bc.png") 720px 10px,
-		url("PL - Assets/footer-bc.jpg") center bottom;
-		 background-size: 20%, 54%, 100%;
-    background-repeat: no-repeat;
-    padding-left: 15%;
-    margin: 0;
-    padding-top: 70px;
-}
+	background: url("PL - Assets/home.png") 940px 123px,
+		url("PL - Assets/home-bc.png") 790px 0px,
+		url("PL - Assets/footer-bc.jpg") center bottom,
+		 url("PL - Assets/flowers.svg") 20px 760px;
+		 background-size:18%,54%,100%, 60%;
+    background-repeat:no-repeat, no-repeat, no-repeat, repeat-x;
+    padding-left:15%;
+    margin:0;
+    padding-top:70px;
+}	
 header{
-	position: fixed;
+	width:12%;
+	height:100vh;
+	background:rgba(255,255,255,0.7);
+	position:fixed;
 	top:0;
 	left:0;	
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
 }
+/*HEADER*/
 .imgheader{
-	width: 100px;
-	padding-left: 35%;
-	margin-top: 50px;
+	width:100px;
+	margin-top:50px;
+	align-self:center;
 }
 .nav{
-	list-style-type: none;
-}
-li{
-	margin: 24px;
-	font-size: 1em;
-	color: #005884;
-	font-style: normal;
-	text-align: left;
-	line-height: 0.84em;
+	padding-left:30px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
 }
 .li1{
-	font-family: Raleway; 
-	font-weight: bold;
-	text-decoration: none;
+	font-family:Raleway; 
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+	text-align:left;
+	text-decoration:none;
+	margin: 12px 0;
+	color:#005884;
+	line-height:0.84em;
 }
-.li2{
-	font-family: Raleway;
-	font-weight: normal;
-	text-decoration: none;
+.li1:hover{
+	font-weight:bold;
 }
+/*MAIN*/
 .titulo{
-    width: 100%;	
-	display: flex;
-    flex-direction: column;
-    margin-top: 49px;
+	margin-top:49px;
+    padding-left:6%;
+	display:flex;
+    flex-direction:column; 
 }
 .titulo h2{
-	font-family: Sunday;
-	font-weight: normal;
-	font-size: 1.25em;
-	color: #005884;
-	line-height: 2.25em;
-	color: #005884;
-	font-style: normal;
-	text-align: left;
-	line-height: 2em;
-    padding-right: 40%;
+	font-family:Sunday;
+	font-weight:normal;
+	font-size:1.25em;
+	font-style:normal;
+	text-align:left;
+	color:#005884;
+	line-height:2.25em; *ATENÇÃO*
+	line-height:2em;
+    padding-right:50%;
 }
-.titulo1{
-	font-family: Sunday;
-	font-size: 1.25em;
-	color: #005884;
-	font-style: normal;
-	text-align: left;
-	line-height: 2.25em;
-	font-weight: normal;
+.h2-programas, .h2-parceiros, .h2-contatos{ /*H2 PROGRAMAS, H2 PARCEIROS*/
+	width:100%;
+	font-family:Sunday;
+	font-size:1.25em;
+	font-style:normal; 
+	text-align:left;
+	font-weight:normal;
+	color:#005884;
+	line-height:2.25em;
+	
 }
-.texto1{
-	font-family: Raleway;
-	font-size: 1em;
-	color: #005884;
-	font-style: normal;
-	text-align: left;
-	line-height: 1.3em;
-	padding-top: 62px;
-	padding-right: 35%;
+.sobre{ /*Texto sobre o Pontinho de Luz*/
+    width:65%;	
+	font-family:Raleway;
+	font-size:1em;
+	font-style:normal;
+	text-align:left;
+	color:#005884;
+	padding-top:62px;
+	padding-right:35%;
+	line-height:1.3em;
 }
-.text-prg{
-	font-family: Raleway;
-	font-size: 1em;
-	color: #005884;
-	font-style: normal;
-	text-align: left;
-	line-height: 0.86em;
-	font-weight: 600;
+.redes{
+	padding-top:280px;
+	padding-left:6%;
+	display:flex;
+	flex-wrap:wrap;
 }
-.flores{
+.h2redes{
+	width:100%;
+	font-family:Sunday;
+	font-size:1.25em;
+	font-style:normal;
+	font-weight:normal;
+	text-align:left;
+	line-height:2.25em;
+	color:#005884;
+}
 
+figure{
+	padding:0;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+}
+.figcaption{	
+	font-family:Raleway;
+	font-size:1em;
+	font-style:normal;
+	text-align:left;
+	padding-top:16px;
+	color:#005884;
+	line-height:1.3em;
+}
+.programas{
+	padding-top:60px;
+	padding-left:6%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.text-prg{ /*H3 DE PROGRAMAS*/
+	width:10%;
+	font-family:Raleway;
+	font-size:1em;
+	font-style:normal;
+	text-align:left;
+	color:#005884;
+	line-height:0.86em;
+	padding-left:1%;
+	margin-top:80px;
+	margin-left:1%;
+}
+.pprg{ /*P DE PROGRAMAS*/
+	width:80%;	
+	padding-top:62px;
+	font-family:Raleway;
+	font-size:1em;
+	font-style:normal;
+	text-align:left;
+	color:#005884;
+	line-height:1.3em;	
+}
+.prg1{ /*DIV PROGRAMAS*/
+	width:5%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.prg2{
+	display:flex;
+	justify-content:row;
+}
+.prg3{
+	display:flex;
+	justify-content:row;
+}
+.prg4{
+	display:flex;
+	justify-content:row;
 }
 .home{
-	width: 22%;	
+	width:22%;	
 }
-.rede{
-	width: 16%;
+.rede{ /* IMAGENS REDE SOLIDARIEDADE*/
+	width:185px;
+	padding-right:10px;
 }
 .img-prg1{
-	width: 4%;
+	height:70px;
+	padding-top:56px;
 }
-.img-prg2{
-	width: 5%;
+/* PARCEIROS*/
+.parceiros{
+	padding-top:70px;
 }
 .pac1{
-	width: 10%;
+	width:10%;/*IMAGEM- PARCEIROS*/
 }
 .pac2{
-	width: 13%;
+	width:13%; /*IMAGEM-PARCEIROS*/
 }
 .solzinho{
-	width: 8%;
+	width:8%;
+}
+.contatos{
+	padding-top:40px;	
+}
+.icons{
+	width:20px; /*IMAGEM CONTATOS*/
 }
