@@ -8,12 +8,24 @@ body{
     padding-left:15%;
     padding-top:70px;
     margin:0;
+}
+@media(max-width: 640px){
+	body{
+		background: url("PL - Assets/home.png") 50% 123px,
+					url("PL - Assets/home-bc.png") 150px 0%,
+					url("PL - Assets/footer-bc.jpg") 1% 100%,
+			 		url("PL - Assets/flowers.svg") 20px 760px;
+		background-size:18%, 100%, 100%, 60%;
+	    background-repeat:no-repeat, no-repeat, no-repeat, repeat-x;
+	    padding-top: 0%;
+	    padding-left:15%;
+	    margin:0;
+		}
 }	
-/*HEADER*/
 header{
 	width:12%;
 	height:100vh;
-	background:rgba(255,255,255,0.7);
+	background-color: #fff;
 	position:fixed;
 	top:0;
 	left:0;	
@@ -22,11 +34,17 @@ header{
 	justify-content:flex-start;
 	align-items:flex-start;
 }
+@media(max-width: 640px){
+	header{
+		display: none;
+	}
+}
 .logo{
 	width:100px;
 	margin-top:50px;
 	align-self:center;
 }
+
 .nav{
 	padding-top: 28px;
 	padding-left:30px;
@@ -34,7 +52,21 @@ header{
 	flex-direction:column;
 	align-items:flex-start;
 }
+.logo2{
+	width:100px;
+	margin-top:50px;
+	align-self:center;
+	display: none;	
+}
+@media(max-width: 640px){
+	.logo2{
+		display: inline;
+		padding-bottom: 40px;
+		padding-right: 80%;
+	}
+}
 .a{
+	margin: 12px 0;
 	padding-top: 8px;
 	font-family:Raleway; 
 	font-size:1em;
@@ -42,14 +74,12 @@ header{
 	font-style:normal;
 	text-align:left;
 	text-decoration:none;
-	margin: 12px 0;
 	color:#005884;
 	line-height:0.84em;
 }
 .a:hover{
 	font-weight:bold;
 }
-/*MAIN*/
 main{
 	width: 100%;
 }
@@ -67,8 +97,14 @@ main{
 	font-style:normal;
 	text-align:left;
 	color:#005884;
-	line-height:2.25em; *ATENÇÃO*
+	line-height:2.25em;
 	line-height:2em;
+}
+@media (max-width: 640px){
+	.inicio h2{
+		width: 100%;
+		padding-right:20vh; 
+	}
 }
 .sobre{ /*Texto sobre o Pontinho de Luz*/ 
 	padding-top: 42px;
@@ -80,6 +116,11 @@ main{
 	text-align:left;
 	color:#005884;
 	line-height:1.3em;
+}
+@media (max-width: 640px){
+	.sobre{
+		width: 93%;
+	}
 }
 .redes{
 	padding-top:220px;
@@ -185,30 +226,51 @@ figure{
 }
 footer{
 	width:100%;
-	/*display: flex;
-	flex-direction: row;*/	
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;	
 }
-/*.contato2{
-}*/
+footer section{
+	display: flex;
+	flex-direction: row;
+	background: red;
+}
+.contato1{
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+} 
+.div-contato{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+}
 .h2-contatos{
+	width: 100%;
 	padding-top:40px;	
-	width:100%;
 	font-family:Sunday;
 	font-size:1.4em;
 	font-style:normal; 
-	text-align:left;
 	font-weight:normal;
+	text-align:center;
 	color:#fff;
-	line-height:3em;		
+	line-height:3em;			
 }
 .solzinho{
-	width:8%;
+	width:45%;
 }
 .contato2{
-	width: 28.3%;	
+	width: 100%;	
 	display: flex;
-	flex-direction:column;
-	background: red;
+	flex-direction:row;
+	align-items: flex-start;
+}
+.contato2__div{
+	width: 31%;
+	/*background: 	red;*/
 }
 .icons-contato{
     display: flex;	
@@ -216,7 +278,8 @@ footer{
 	align-items: center;
 }
 .icons{
-	width:20px; 
+	width:20px;
+	margin-right: 5px; 
 }
 .p-contatos{	
 	font-family:Raleway;
@@ -236,7 +299,12 @@ footer{
 	text-align:left;
 	line-height: 1.2em;	
 }
-.iframe{
-	/*padding-left: 10%;*/
-	/*padding-top: 20%;*/
+.contato3{
+	width: 60%;
+	margin-left: 20px;
+}
+.contato2 iframe{
+	margin: 0 30px;
+}
+iframe{
 }
