@@ -1,30 +1,28 @@
 body{
 	background: url("PL - Assets/home.png") 880px 123px,
 				url("PL - Assets/home-bc.png") 720px 0px,
-				url("PL - Assets/footer-bc.jpg") 20% 100%,
-		 		url("PL - Assets/flowers.svg") 20px 760px;
-	background-size:18%,54%,100%, 60%;
-    background-repeat:no-repeat, no-repeat, no-repeat, repeat-x;
+				url("PL - Assets/footer-bc.jpg") 20% 100%;
+	background-size:18%,54%,100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     padding-left:15%;
     padding-top:70px;
     margin:0;
 }
 @media(max-width: 640px){
 	body{
-		background: url("PL - Assets/home.png") 50% 123px,
-					url("PL - Assets/home-bc.png") 150px 0%,
-					url("PL - Assets/footer-bc.jpg") 1% 100%,
-			 		url("PL - Assets/flowers.svg") 20px 760px;
-		background-size:18%, 100%, 100%, 60%;
-	    background-repeat:no-repeat, no-repeat, no-repeat, repeat-x;
+		background: url("PL - Assets/home.png") 230px 190px,
+					url("PL - Assets/home-bc.png") 120px 0%,
+					url("PL - Assets/footer-bc.jpg") 20% 3600px;
+		background-size:36%, 600px, 2300px;
+	    background-repeat:no-repeat, no-repeat, no-repeat;
 	    padding-top: 0%;
-	    padding-left:15%;
+	    padding-left: 5%;
 	    margin:0;
 		}
 }	
 header{
 	width:12%;
-	height:100vh;
+	height:100%;
 	background-color: #fff;
 	position:fixed;
 	top:0;
@@ -37,7 +35,6 @@ header{
 @media(max-width: 640px){
 	header{
 		display: none;
-
 	}
 }
 .logo{
@@ -62,8 +59,9 @@ header{
 @media(max-width: 640px){
 	.logo2{
 		display: inline;
-		padding-bottom: 40px;
-		padding-right: 80%;
+		padding-bottom: 50px;
+		padding-right: 60%;
+		width: 40%;
 	}
 }
 .a{
@@ -89,6 +87,18 @@ main{
     padding-left:6%;
 	display:flex;
     flex-direction:column; 
+  	padding-bottom: 23vh;
+    background: url("PL - Assets/flowers.svg") bottom no-repeat;
+    background-size: 60%;
+    background-repeat: repeat-x; 
+}
+@media(max-width: 640px){
+	.inicio{
+		padding-left: 0%;
+		padding-bottom: 15vh;
+		background-size: 450px;
+		background-repeat: repeat-x;
+	}
 }
 .inicio h2{
 	width: 54%;	
@@ -104,7 +114,6 @@ main{
 @media (max-width: 640px){
 	.inicio h2{
 		width: 100%;
-		padding-right:20%; 
 	}
 }
 .sobre{ /*Texto sobre o Pontinho de Luz*/ 
@@ -121,13 +130,20 @@ main{
 @media (max-width: 640px){
 	.sobre{
 		width: 93%;
+		padding-right: 0%;
 	}
 }
 .redes{
-	padding-top:220px;
+	padding-top: 50px;
 	padding-left:6%;
 	display:flex;
 	flex-wrap:wrap;
+}
+@media (max-width: 640px){
+	.redes{
+		padding-top: 25px;
+		padding-left: 0%;
+	}
 }
 .h2-redes{
 	width:100%;
@@ -145,9 +161,22 @@ figure{
 	display:flex;
 	flex-direction:	column;
 }
+@media (max-width: 640px){
+	figure{
+		display:flex;
+		flex-direction:column;
+		flex-wrap: wrap;
+		width:50%;
+	}
+}
 .rede{ /* IMAGENS REDE SOLIDARIEDADE*/
 	width:185px;
 	padding-right:10px;
+}
+ @media (max-width: 640px){
+	.rede{
+		width: 95%;
+	}
 }
 .figcaption{	
 	padding-top:16px;
@@ -165,6 +194,11 @@ figure{
 	flex-direction:row;
 	flex-wrap:wrap;
 }
+ @media (max-width: 640px){
+ 	.programas{
+ 		padding-left: 0%;
+ 	}
+ }
 .h2-programas, .h2-parceiros{ /*H2 PROGRAMAS, H2 PARCEIROS*/
 	width:100%;
 	font-family:Sunday;
@@ -181,9 +215,19 @@ figure{
 	justify-content:center;
 	align-items:center;
 }
+@media(max-width: 640px){
+	.div-programas{
+		width: 10%;
+	}
+}
 .imagem-programas{
 	height:70px;
 	padding-top:56px;
+}
+@media(max-width: 640px){
+	.imagem-programas{
+		/*width: 100%;*/
+	}
 }
 .text-programas{ /*H3 DE PROGRAMAS*/
 	width:10%;
@@ -197,6 +241,12 @@ figure{
 	color:#005884;
 	line-height:0.86em;
 }
+@media(max-width: 640px){
+	.text-programas{
+		width: 60%;
+		padding-left: 28px;
+	}
+}
 .p-programas{ /*P DE PROGRAMAS*/
 	width:80%;	
 	padding-top:62px;
@@ -207,6 +257,12 @@ figure{
 	color:#005884;
 	line-height:1.3em;	
 }
+@media(max-width: 640px){
+	.p-programas{
+		width: 100%;
+		padding-left: 0%;
+	}
+}
 .parceiros{
 	margin-bottom: 12%;
 	padding-top: 50px;
@@ -215,6 +271,11 @@ figure{
 	flex-direction:row;
 	flex-wrap:wrap;
 }
+ @media (max-width: 640px){
+ 	.parceiros{
+ 		padding-left: 0%;
+ 	}
+ }
 .parceiros img{
 	padding-top: 20px; 
 }
@@ -227,27 +288,37 @@ figure{
 }
 footer{
 	width:100%;
-	margin-bottom: 50px;
+	padding-bottom: 25px;
 	display: flex;
 	flex-direction: column;	
+	/*background:url("PL - Assets/footer-bc.jpg") bottom no-repeat;
+	background-size: 100%;*/
+}
+@media(max-width: 640px){
+	footer{
+		padding-top: 70px;
+	}
 }
 footer section{
 	display: flex;
 	flex-direction: row;
-	background: red;
 }
 .contato1{
 	margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 } 
+@media(max-width: 640px){
+	.contato1{
+		margin-bottom: 30px;
+	}
+}
 .div-contato{
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: wrap;
-
 }
 .h2-contatos{
 	width: 100%;
@@ -260,8 +331,18 @@ footer section{
 	color:#fff;
 	line-height:3em;			
 }
+@media(max-width: 640px){
+	.h2-contatos{
+		width: 90%;
+	}
+}
 .solzinho{
 	width:45%;
+}
+@media(max-width: 640px){
+	.solzinho{
+		width: 90%;
+	}
 }
 .contato2{
 	width: 100%;	
@@ -272,14 +353,21 @@ footer section{
 }
 .contato2__div{
 	width: 31%;
-	/*background: 	red;*/
 }
-
-
+@media(max-width: 640px){
+	.contato2__div{
+		width: 100%;
+	}
+}
 .icons-contato{
     display: flex;	
 	flex-wrap:wrap;
 	align-items: center;
+}
+@media(max-width: 640px){
+	.icons-contato{
+		padding-left: 11%;
+	}
 }
 .icons{
 	width:20px;
@@ -294,6 +382,11 @@ footer section{
 	text-align:left;
 	line-height:0.86em;	
 }
+@media(max-width: 640px){
+	.p-contatos{
+		width: 80%;
+	}
+}
 .p-contatos2{
 	font-family:Raleway;
 	font-size: 1em;
@@ -302,6 +395,12 @@ footer section{
 	color: #fff;
 	text-align:left;
 	line-height: 1.2em;	
+}
+@media(max-width: 640px){
+	.p-contatos2{
+		width: 60%;
+		padding-left: 11%;
+	}
 }
 .contato3{
 	width: 60%;
@@ -313,7 +412,7 @@ footer section{
 @media(max-width: 640px){
 	.contato2 iframe{
 		margin: 0 auto;
-		margin-bottom: 10px; 
+		margin-bottom: 16px; 
 	}
 }
 iframe{
