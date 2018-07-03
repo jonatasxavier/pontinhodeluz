@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500,700');
+
 body{
     padding-left:15%;
     padding-top:70px;
@@ -433,6 +435,7 @@ footer section{
 	}
 }
 /*footer Vai na Web */
+
 .vnw{ 
 	width: 100%;
     height: 40px; 
@@ -446,14 +449,14 @@ footer section{
 	bottom: 0;
 }
 .vnw__text{
-  font-family: 'filson-soft', sans-serif;
-	font-style: normal;
+	font-family: 'Source Code Pro', monospace;
 	font-weight: 500;
 	font-size: 16px;
     color: #30368c;
 }
 .vnw__link{
-    color: #30368c;
+	color: #30368c;
+	font-weight: 700;
 }
 @media (max-width: 768px){
 	.vnw__text{
